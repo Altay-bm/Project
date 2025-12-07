@@ -1,0 +1,42 @@
+# Создаём файл .gitignore с основными исключениями
+@'
+## Visual Studio
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.cache
+*.vcxproj*.user
+*.vcxproj*.filters
+
+## Packages
+packages/
+*.nupkg
+
+## Test results
+TestResults/
+
+## Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Visual Studio Code
+.vscode/
+'@ | Out-File -FilePath .gitignore -Encoding UTF8
